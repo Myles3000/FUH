@@ -1,0 +1,10 @@
+
+=== Thu Apr 30 21:44:11 2026
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.nuget.newtonsoft-json@3.2.2
+The following packages were updated:
+  com.unity.inputsystem from version 1.17.0 to 1.18.0
