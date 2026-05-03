@@ -1600,8 +1600,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueControl
   text: {fileID: 2003816368}
   dialogueLines:
-  - Time for a blast from the past. Go to the TV.
-  - 
+  - Welcome to the Han dynasty look around for anybody of importance.
+  - Go to the bathhouse or find the bar
+  - Rob the minster
 --- !u!4 &1104387623
 Transform:
   m_ObjectHideFlags: 0
