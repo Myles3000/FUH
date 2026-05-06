@@ -364,7 +364,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e3a70d3f04bbf9a4c87d5385124ca950, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -545,7 +545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badb8dbdbdb1faa46af1a4c36ed62ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenSeseme
-  con: {fileID: 0}
 --- !u!1 &388769038
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +813,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ea077ec75170024eacf45508f9a01f7, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1585,7 +1584,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a9dd11dd1dc3a540b05e10bb0ed9f49, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1663,7 +1662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badb8dbdbdb1faa46af1a4c36ed62ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenSeseme
-  con: {fileID: 0}
 --- !u!114 &1599565044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,6 +1674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc1ae413c1be9b40ade6253e39620c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
+  speed: 5
+  cameraObj: {fileID: 0}
+  joyStickMode: 0
 --- !u!143 &1599565045
 CharacterController:
   m_ObjectHideFlags: 0

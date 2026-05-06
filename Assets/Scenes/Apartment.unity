@@ -1113,6 +1113,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204da6aadc13e164eac745605815a273, type: 3}
+--- !u!1 &987886922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987886924}
+  - component: {fileID: 987886923}
+  m_Layer: 0
+  m_Name: OpeningScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &987886923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987886922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0025c36c0148ee347aa67f8a062a6204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpeningScene
+  scene: SilkRoad
+  error: {fileID: 0}
+  errorShowTime: 10
+--- !u!4 &987886924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987886922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.49408, y: 2.74593, z: -9.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1072140353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1183,10 +1230,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bf92dba2db020b4cafbf8fea1c11661, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1072140356}
+      addedObject: {fileID: 1072140355}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9bf92dba2db020b4cafbf8fea1c11661, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1072140355}
+      addedObject: {fileID: 1072140360}
   m_SourcePrefab: {fileID: 100100000, guid: 9bf92dba2db020b4cafbf8fea1c11661, type: 3}
 --- !u!1 &1072140354 stripped
 GameObject:
@@ -1208,13 +1255,13 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.81301075, y: 0.49188069, z: 0.08403605}
   m_Center: {x: 0, y: 0.24592225, z: -0.0000000055879354}
---- !u!114 &1072140356
+--- !u!114 &1072140360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1226,7 +1273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0025c36c0148ee347aa67f8a062a6204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpeningScene
-  start: SilkRoad
+  scene: SilkRoad
+  error: {fileID: 0}
+  errorShowTime: 10
 --- !u!1 &1097811040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1582,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 375, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1339459470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1339459472}
+  - component: {fileID: 1339459471}
+  m_Layer: 0
+  m_Name: OpenSeseme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1339459471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339459470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badb8dbdbdb1faa46af1a4c36ed62ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpenSeseme
+--- !u!4 &1339459472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339459470}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.49408, y: 2.74593, z: -9.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1537894138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1815538391}
-  - component: {fileID: 1815538390}
+  - component: {fileID: 1815538392}
   m_Layer: 0
   m_Name: GuideManager
   m_TagString: Untagged
@@ -1749,21 +1842,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1815538390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815538389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2085ae67d2e944e8126c839657d9a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueControl
-  text: {fileID: 1287845659}
-  dialogueLines:
-  - Time for a blast from the past. Go to the TV.
 --- !u!4 &1815538391
 Transform:
   m_ObjectHideFlags: 0
@@ -1779,6 +1857,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1815538392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815538389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a217d28a45e7e44cac46a3b3ba49be3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueControl
+  text: {fileID: 1287845659}
+  dialogueLines:
+  - 'Welcome, nativate to the TV and press OK to be transported '
 --- !u!1 &1825985783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,3 +2003,5 @@ SceneRoots:
   - {fileID: 1599565046}
   - {fileID: 40334992}
   - {fileID: 1815538391}
+  - {fileID: 987886924}
+  - {fileID: 1339459472}

@@ -4,7 +4,7 @@ public class raycaster : MonoBehaviour
 {
     public static raycaster ray;
     public Camera mainCam;
-    public float distance = 4f;
+    public float distance = 10f;
     public RaycastHit hit;
     public bool hasHit;
 
