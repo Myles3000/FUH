@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class OpenSeseme : MonoBehaviour
 {
+    public GameObject con;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,6 +14,12 @@ public class OpenSeseme : MonoBehaviour
     {
         KeyCode windowsOK = (KeyCode)((int)KeyCode.JoystickButton0 + 3);
         KeyCode androidOK = (KeyCode)((int)KeyCode.JoystickButton0);
+        KeyCode travel = (KeyCode)((int)KeyCode.JoystickButton0 + 1);
+
+        if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(travel))
+        {
+
+        }
 
         //Buttons for Myles, currently OK button does not work
         //KeyCode windowsOKM = (KeyCode)((int)KeyCode.JoystickButton0 + 2);

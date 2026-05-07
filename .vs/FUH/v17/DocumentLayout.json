@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|c:\\users\\nelso\\desktop\\created games\\cs6334 hw\\fuh\\assets\\scripts\\dialoguecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\Transcribe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Transcribe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\assets\\scripts\\opensesame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\opensesame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\assets\\scripts\\consequences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\consequences.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\assets\\scripts\\librarianmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\librarianmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\assets\\scripts\\dialoguecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3EF0BC7-E58C-4AA1-3663-D3C5C2D22759}|Assembly-CSharp.csproj|C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\assets\\scripts\\openingscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,59 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OpenSesame.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpenSesame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OpenSesame.cs",
+              "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpenSesame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OpenSesame.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAzwBAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T01:08:50.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OpeningScene.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpeningScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\OpeningScene.cs",
+              "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpeningScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\OpeningScene.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T01:18:11.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibrarianManager.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\LibrarianManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LibrarianManager.cs",
+              "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\LibrarianManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LibrarianManager.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T01:14:15.096Z"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Consequences.cs",
+              "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\Consequences.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Consequences.cs",
+              "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\Consequences.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Consequences.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T18:43:16.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DialogueControl.cs",
               "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\DialogueControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueControl.cs",
               "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\DialogueControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialogueControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowBEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T19:19:00.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Transcribe.cs",
-              "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\Transcribe.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Transcribe.cs",
-              "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\Transcribe.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Transcribe.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-26T23:32:06.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OpenSesame.cs",
-              "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpenSesame.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\OpenSesame.cs",
-              "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpenSesame.cs",
-              "RelativeToolTip": "Assets\\Scripts\\OpenSesame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T01:56:08.514Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OpeningScene.cs",
-              "DocumentMoniker": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpeningScene.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\OpeningScene.cs",
-              "ToolTip": "C:\\Users\\nelso\\Desktop\\Created Games\\CS6334 HW\\FUH\\Assets\\Scripts\\OpeningScene.cs",
-              "RelativeToolTip": "Assets\\Scripts\\OpeningScene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T05:03:27.084Z"
+              "WhenOpened": "2026-05-03T19:19:00.985Z"
             }
           ]
         }

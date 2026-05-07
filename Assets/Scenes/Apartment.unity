@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2efbac15fbfc40f4bb6fb0073748c3d9, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -545,6 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badb8dbdbdb1faa46af1a4c36ed62ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenSeseme
+  con: {fileID: 0}
 --- !u!1 &388769038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,11 +1124,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9bf92dba2db020b4cafbf8fea1c11661, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9bf92dba2db020b4cafbf8fea1c11661, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9bf92dba2db020b4cafbf8fea1c11661, type: 3}
       propertyPath: m_LocalScale.z
@@ -1676,6 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badb8dbdbdb1faa46af1a4c36ed62ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenSeseme
+  con: {fileID: 0}
 --- !u!114 &1599565044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,9 +1690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc1ae413c1be9b40ade6253e39620c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
-  speed: 5
-  cameraObj: {fileID: 675211124}
-  joyStickMode: 1
 --- !u!143 &1599565045
 CharacterController:
   m_ObjectHideFlags: 0
