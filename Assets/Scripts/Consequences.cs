@@ -14,17 +14,20 @@ public class Consequences : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
+            Debug.LogWarning("Duplicate Consequences destroyed: " + gameObject.name);
             Destroy(gameObject);
             return;
         }
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        Debug.Log("Consequences Instance is: " + gameObject.name);
     }
 
     public void setreadBook(bool value)
     {
         readBook = value;
+        Debug.Log("setreadBook called. readBook = " + readBook + " on " + gameObject.name);
     }
 
     public void setRobGen(bool value)
@@ -35,6 +38,7 @@ public class Consequences : MonoBehaviour
     public void setStoleCloth(bool value)
     {
         stole_cloth = value;
+        Debug.Log("setStoleCloth called. stole_cloth = " + stole_cloth + " on " + gameObject.name);
     }
 
     public void setcanonSilkRoadChoice(bool value)
@@ -69,6 +73,12 @@ public class Consequences : MonoBehaviour
 
     public bool OpenCourt()
     {
+        Debug.Log(
+        "OpenCourt check on " + gameObject.name +
+        ": readBook = " + readBook +
+        ", stole_cloth = " + stole_cloth
+        );
+
         return readBook && stole_cloth;
     }
 

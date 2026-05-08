@@ -31,14 +31,31 @@ public class OpeningScene : MonoBehaviour
 
     public void court()
     {
-        if (Consequences.Instance.OpenCourt())
+        if (Consequences.Instance == null)
         {
-            SceneManager.LoadScene(scene);
+            DisplayError("Consequences manager is missing.");
+            Debug.LogWarning("Consequences.Instance is missing.");
+            return;
         }
-        else
+
+        bool canOpen = Consequences.Instance.OpenCourt();
+
+        Debug.Log("Court button pressed. Can open court = " + canOpen);
+
+
+
+        if (!canOpen)
         {
             Consequences.Instance.StatusCheck();
+            return;
         }
+
+        string sceneName = scene.Trim();
+
+        Debug.Log("Trying to load scene: " + sceneName);
+        Debug.Log("CanStreamedLevelBeLoaded: " + Application.CanStreamedLevelBeLoaded(sceneName));
+
+        SceneManager.LoadScene(sceneName);
     }
 
     private void DisplayError(string message)

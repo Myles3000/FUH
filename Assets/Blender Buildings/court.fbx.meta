@@ -7,23 +7,43 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 7494c498725024944bdce6ff954abb5b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 2c6e21b13001b62418bd7e749ef55ef7, type: 2}
+      name: Material
+    second: {fileID: 2100000, guid: 373dac70c2a0b24449c41fbffed6a395, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.003
-    second: {fileID: 2100000, guid: 0a99e981b9c111642a0696b2bb595661, type: 2}
+    second: {fileID: 2100000, guid: 9d92072af7be92a42a61178f5e1bc6c3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.004
-    second: {fileID: 2100000, guid: 39e7cf75b42513f498b6a11bb010b66c, type: 2}
+    second: {fileID: 2100000, guid: bc2c0d3f7458aba49a2513e72450ceb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: f25f27b4b54cfbb4ebb08706961911bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 91ea5ac0d29fbc243b1e72e0ff51798c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 4d0fc8e82b767e64080223569de33708, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 19106403afb32c24fac19f143c25e526, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: 050a88cc432a41c42bee2d383edac3d7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
