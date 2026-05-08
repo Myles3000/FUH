@@ -29,57 +29,5 @@ public class OpeningScene : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
-    public void court()
-    {
-        if (Consequences.Instance == null)
-        {
-            DisplayError("Consequences manager is missing.");
-            Debug.LogWarning("Consequences.Instance is missing.");
-            return;
-        }
 
-        bool canOpen = Consequences.Instance.OpenCourt();
-
-        Debug.Log("Court button pressed. Can open court = " + canOpen);
-
-
-
-        if (!canOpen)
-        {
-            Consequences.Instance.StatusCheck();
-            return;
-        }
-
-        string sceneName = scene.Trim();
-
-        Debug.Log("Trying to load scene: " + sceneName);
-        Debug.Log("CanStreamedLevelBeLoaded: " + Application.CanStreamedLevelBeLoaded(sceneName));
-
-        SceneManager.LoadScene(sceneName);
-    }
-
-    private void DisplayError(string message)
-    {
-        if (error == null)
-        {
-            Debug.LogWarning(message);
-            return;
-        }
-
-        error.text = message;
-        error.gameObject.SetActive(true);
-
-        StopAllCoroutines();
-        StartCoroutine(HideErrorAfterDelay());
-    }
-
-    private IEnumerator HideErrorAfterDelay()
-    {
-        yield return new WaitForSeconds(errorShowTime);
-
-        if (error != null)
-        {
-            error.gameObject.SetActive(false);
-        }
-    }
 }

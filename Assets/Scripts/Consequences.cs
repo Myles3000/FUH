@@ -9,25 +9,23 @@ public class Consequences : MonoBehaviour
     private bool rob_gen = false;
     private bool stole_cloth = false;
     private bool canonSilkRoadChoice = false;
+    public GameObject openCourt;
 
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
-            Debug.LogWarning("Duplicate Consequences destroyed: " + gameObject.name);
             Destroy(gameObject);
             return;
         }
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log("Consequences Instance is: " + gameObject.name);
     }
 
     public void setreadBook(bool value)
     {
         readBook = value;
-        Debug.Log("setreadBook called. readBook = " + readBook + " on " + gameObject.name);
     }
 
     public void setRobGen(bool value)
@@ -38,7 +36,6 @@ public class Consequences : MonoBehaviour
     public void setStoleCloth(bool value)
     {
         stole_cloth = value;
-        Debug.Log("setStoleCloth called. stole_cloth = " + stole_cloth + " on " + gameObject.name);
     }
 
     public void setcanonSilkRoadChoice(bool value)
@@ -66,40 +63,24 @@ public class Consequences : MonoBehaviour
         return canonSilkRoadChoice;
     }
 
-    public bool AllRequiredButtonsClicked()
-    {
-        return readBook && rob_gen && stole_cloth && canonSilkRoadChoice;
-    }
-
-    public bool OpenCourt()
-    {
-        Debug.Log(
-        "OpenCourt check on " + gameObject.name +
-        ": readBook = " + readBook +
-        ", stole_cloth = " + stole_cloth
-        );
-
-        return readBook && stole_cloth;
-    }
-
+    //checking each/combination button's status 
     public int consequence()
     {
-        if (canonSilkRoadChoice)
+        
+        if ((readBook && stole_cloth && canonSilkRoadChoice) || canonSilkRoadChoice)
         {
-            if (readBook && stole_cloth && canonSilkRoadChoice)
-            {
-                return 2;
-            }
-            else if ((rob_gen && stole_cloth && readBook) || readBook || stole_cloth || rob_gen)
-            {
-                return 1;
-            }
+            return 2;
         }
+        else if ((rob_gen && stole_cloth && readBook) || readBook || stole_cloth || rob_gen)
+        {
+            return 1;
+        }
+        
 
         return 0;
     }
 
-
+    //scene openers per decision/consequence 
     public void LoadPresentScene()
     {
         int result = consequence();
@@ -119,24 +100,29 @@ public class Consequences : MonoBehaviour
         
     }
 
-    public void TrySwitchScene(string sceneName)
-    {
-        if (AllRequiredButtonsClicked())
-        {
-            SceneManager.LoadScene(sceneName);
-        }
-    }
-
+    //check the status of each button 
     public void StatusCheck()
     {
-        if (readBook && rob_gen && stole_cloth && canonSilkRoadChoice == false)
+        if (!readBook && !rob_gen && !stole_cloth && !canonSilkRoadChoice)
         {
             Debug.Log("You have not made a choice, you cannot return to the present");
         }
 
-        if (readBook || stole_cloth == false)
+        if (!readBook || !stole_cloth)
         {
             Debug.Log("You have not met the requirements to enter the palace: read the book and steal the minister's cloth");
+        }
+    }
+
+
+  
+    
+
+    public void OpenCourtBallet()
+    {
+        if (readBook && stole_cloth)
+        {
+            openCourt.SetActive(false);
         }
     }
 }

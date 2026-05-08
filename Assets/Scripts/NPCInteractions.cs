@@ -1,36 +1,40 @@
 using UnityEngine;
 
-public class NPCInteractions : MonoBehaviour
+public class NPCMuteInteraction : MonoBehaviour
 {
-
-
     public KeyCode okKey = KeyCode.JoystickButton0;
     public KeyCode keyboardTestKey = KeyCode.E;
 
-    public Animator animator;
-    public string talkAnimationTrigger = "Talk";
+    [Header("Outline")]
+    public Outline outline;
+    public Color outlineColor = Color.yellow;
+    public float outlineWidth = 4f;
 
+    [Header("Audio To Mute/Unmute")]
+    public AudioSource[] npcAudioSources;
 
-    public MonoBehaviour convaiCharacterScript;
-    public AudioSource audioSource;
+    [Header("Audio Settings")]
+    public float activeVolume = 1f;
+    public float mutedVolume = 0f;
+    public bool stopAudioWhenLookingAway = true;
 
-    private bool hasStartedTalking = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool interactionActive = false;
+
     void Start()
     {
-        if (animator == null)
-            animator = GetComponentInChildren<Animator>();
+        if (outline == null)
+            outline = GetComponentInChildren<Outline>();
 
-        // Keep speech/audio off until the player chooses this NPC.
-        if (audioSource != null)
-            audioSource.enabled = false;
+        if (outline != null)
+        {
+            outline.OutlineColor = outlineColor;
+            outline.OutlineWidth = outlineWidth;
+            outline.enabled = false;
+        }
 
-        // Optional: if your Convai character talks automatically, keep it disabled first.
-        if (convaiCharacterScript != null)
-            convaiCharacterScript.enabled = false;
+        MuteNPC();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (raycaster.ray == null)
@@ -38,37 +42,57 @@ public class NPCInteractions : MonoBehaviour
 
         bool lookingAtThisNPC = raycaster.ray.LookingAt(transform);
 
-        if (lookingAtThisNPC && (Input.GetKeyDown(okKey) || Input.GetKeyDown(keyboardTestKey)))
+        if (outline != null)
+            outline.enabled = lookingAtThisNPC;
+
+        if (lookingAtThisNPC && !interactionActive &&
+            (Input.GetKeyDown(okKey) || Input.GetKeyDown(keyboardTestKey)))
         {
-            EnableTalking();
+            UnmuteNPC();
+        }
+
+        if (interactionActive && !lookingAtThisNPC)
+        {
+            MuteNPC();
         }
     }
 
-    public void EnableTalking()
+    void UnmuteNPC()
     {
-        if (hasStartedTalking)
-            return;
+        interactionActive = true;
 
-        hasStartedTalking = true;
+        foreach (AudioSource source in npcAudioSources)
+        {
+            if (source != null)
+            {
+                source.enabled = true;
+                source.mute = false;
+                source.volume = activeVolume;
+            }
+        }
 
-        if (convaiCharacterScript != null)
-            convaiCharacterScript.enabled = true;
-
-        if (audioSource != null)
-            audioSource.enabled = true;
-
-        if (animator != null && !string.IsNullOrEmpty(talkAnimationTrigger))
-            animator.SetTrigger(talkAnimationTrigger);
+        Debug.Log("NPC unmuted: " + gameObject.name);
     }
 
-    public void StopTalking()
+    void MuteNPC()
     {
-        hasStartedTalking = false;
+        interactionActive = false;
 
-        if (audioSource != null)
-            audioSource.enabled = false;
+        foreach (AudioSource source in npcAudioSources)
+        {
+            if (source != null)
+            {
+                if (stopAudioWhenLookingAway)
+                    source.Stop();
 
-        if (convaiCharacterScript != null)
-            convaiCharacterScript.enabled = false;
+                source.volume = mutedVolume;
+                source.mute = true;
+
+                // Keep enabled because some Convai audio systems dislike disabled AudioSources.
+                source.enabled = true;
+            }
+        }
+
+        Debug.Log("NPC muted: " + gameObject.name);
     }
 }
