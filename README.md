@@ -14,11 +14,11 @@ The NPC also needs a character ID and an API key. The API key can be placed or u
     Character ID: 280cde72-4b32-11f1-92e3-42010a7be02e 
 
 
-How to run:
+How to run: /n
 Open Unity
     Go to Edit → Project Settings → Search: Convai 
         In the API key slot: d88d15b52fbbf6ec1eb94e6c7669e081
-    Got to Librarian’s Inspections tab
+    Go to Librarian’s Inspections tab
         Search and add Convai character and convai audio output if not already there 
             In the Convai character, in the Character ID box, put: 280cde72-4b32-11f1-92e3-42010a7be02e
     It should already be in there but check and make sure that the Character has Convai Player inside it but if it is not, search for it in components and add it in.
