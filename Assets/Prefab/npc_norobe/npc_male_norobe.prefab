@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4671499731466936660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 448.62317
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000011936074
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 218.05156
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      propertyPath: m_Name
+      value: npc_male_norobe
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6999115811218280065}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6185381274568047270}
+  m_SourcePrefab: {fileID: 100100000, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+--- !u!1 &5482544928936844293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+  m_PrefabInstance: {fileID: 4671499731466936660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6999115811218280065
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482544928936844293}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0b201126f5bf1404582aac453540908a, type: 3}
+  m_Controller: {fileID: 9100000, guid: 781100b8f52dddb44a29afbc2425e359, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6185381274568047270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482544928936844293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba5693629d8aab4da45240f6ce0da64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcWalk
+  speed: 3

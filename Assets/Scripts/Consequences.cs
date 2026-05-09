@@ -20,7 +20,7 @@ public class Consequences : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+
     }
 
     public void setreadBook(bool value)
@@ -66,8 +66,8 @@ public class Consequences : MonoBehaviour
     //checking each/combination button's status 
     public int consequence()
     {
-        
-        if ((readBook && stole_cloth && canonSilkRoadChoice) || canonSilkRoadChoice)
+
+        if (readBook && stole_cloth && canonSilkRoadChoice)
         {
             return 2;
         }
@@ -75,9 +75,13 @@ public class Consequences : MonoBehaviour
         {
             return 1;
         }
-        
+        else if (!readBook && !stole_cloth && canonSilkRoadChoice)
+        {
+            return 3;
+        }
 
-        return 0;
+
+            return 0;
     }
 
     //scene openers per decision/consequence 
@@ -96,6 +100,10 @@ public class Consequences : MonoBehaviour
         else if (result == 2)
         {
             SceneManager.LoadScene("BadApartment");
+        }
+        else if (result == 3)
+        {
+            SceneManager.LoadScene("WorstApartment");
         }
         
     }
