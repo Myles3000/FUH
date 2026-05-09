@@ -14,8 +14,9 @@ The NPC also needs a character ID and an API key. The API key can be placed or u
     Character ID: 280cde72-4b32-11f1-92e3-42010a7be02e 
 
 
-How to run: /n
+How to run: 
 Open Unity
+    
     Go to Edit → Project Settings → Search: Convai 
         In the API key slot: d88d15b52fbbf6ec1eb94e6c7669e081
     Go to Librarian’s Inspections tab
